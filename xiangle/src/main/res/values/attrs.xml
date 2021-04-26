@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageViewbak">
+        <attr name="imageSrc" format="reference"/>
+        <attr name="inSampieSize" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="Grid9Layout">
+        <attr name="showChoose" format="boolean" />
+        <attr name="numColumn" format="integer" />
+        <attr name="itemMargin" format="integer" />
+    </declare-styleable>
+<!--    计时器按钮-->
+    <declare-styleable name="CountDownButton">
+        <attr name="millisinfuture" format="integer"/>
+        <attr name="countdowninterva" format="integer"/>
+        <attr name="normalColor" format="color"/>
+        <attr name="countDownColor" format="color"/>
+    </declare-styleable>
+</resources>

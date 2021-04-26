@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:background="@color/white">
+        <!-- 图片和文字 -->
+        <!-- 随便放了一张图片，稍微美化一下 -->
+
+        <TextView
+            android:id="@+id/group_list_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="20dp">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect"
+        android:hint="想说点什么"
+        android:textSize="14sp"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top"
+        android:lineHeight="20dp"
+        android:paddingTop="10dp"
+        android:textCursorDrawable="@drawable/input_cursor" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_rect"
+        android:hint="请输入qq,微信，手机号等联系方式"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/input_cursor" />
+    <Button
+        android:id="@+id/submit_btn"
+        android:text="提交"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

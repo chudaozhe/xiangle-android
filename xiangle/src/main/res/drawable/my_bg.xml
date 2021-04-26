@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--防止图片拉伸-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_bg1"
+    android:src="@drawable/my_background"
+    android:tileMode="disabled"
+    android:gravity="top" >
+</bitmap>
+

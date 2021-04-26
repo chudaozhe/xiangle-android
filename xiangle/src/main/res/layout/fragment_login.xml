@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="请输入用户名"
+        android:background="@null"
+        android:drawableBottom="@drawable/input_line"
+        android:textCursorDrawable="@drawable/input_cursor"
+        android:autofillHints="aaa" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/username"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        android:background="@null"
+        android:drawableBottom="@drawable/input_line"
+        android:textCursorDrawable="@drawable/input_cursor"
+        android:autofillHints="aaa" />
+    <Button
+        android:id="@+id/login"
+        android:text="登录"
+        android:layout_below="@id/password"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/register"
+        android:text="注册"
+        android:layout_below="@id/login"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tips"
+        android:text="登录/注册表示您已同意《用户协议》"
+        android:textSize="12sp"
+        android:layout_below="@id/register"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

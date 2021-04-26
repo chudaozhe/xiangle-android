@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="想说点什么"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top"
+        android:lineHeight="20dp"
+        android:textSize="14sp"
+        android:textCursorDrawable="@drawable/input_cursor"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <net.cuiwei.xiangle.view.Grid9Layout
+        android:id="@+id/images"
+        android:layout_below="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showChoose="true"/>
+
+
+    <!--android:layout_below="@+id/content"-->
+    <LinearLayout
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/topic_select_blackground"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:text="选择话题"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:paddingTop="6dp"
+            app:drawableLeftCompat="@mipmap/huati2" />
+
+        <ImageView
+            android:src="@mipmap/jiantou"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp" />
+    </LinearLayout>
+</RelativeLayout>

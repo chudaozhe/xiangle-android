@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="grey">#ff666666</color>
+    <color name="orange">#ffff8100</color>
+<!--    透明度40的 orange-->
+    <color name="orange2">#40ff8100</color>
+
+    <color name="tab_text_selected">#ffef8633</color>
+    <color name="tab_text_normal">#ff333333</color>
+    <color name="touming">#00000000</color>
+    <color name="black37">#37000000</color>
+    <color name="black67">#67000000</color>
+    <color name="black">#ff000000</color>
+    <color name="dot_hong">#E73111</color>
+    <color name="text_bottom_comment">#9B9B9B</color>
+    <color name="bg">#fff1f2f6</color>
+    <color name="white">#ffffffff</color>
+    <color name="cellLine">#fff2f2f7</color>
+
+</resources>

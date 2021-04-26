@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <com.scwang.smart.refresh.header.ClassicsHeader-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <!--android:layout_centerInParent="true"-->
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/avatar"
+                    android:text="..." />
+
+                <Button
+                    android:id="@+id/follow"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_follow_highlighted"
+                    android:text="关注"
+                    android:textColor="@color/orange" />
+                <!--                black67-->
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avatar"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp" />
+
+                <net.cuiwei.xiangle.view.Grid9Layout
+                    android:id="@+id/images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content"
+                    android:layout_marginTop="10dp"
+                    app:itemMargin="10"
+                    app:numColumn="3"
+                    app:showChoose="false" />
+
+                <TextView
+                    android:id="@+id/list_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/images"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="评论列表"
+                    android:textSize="16sp" />
+
+                <net.cuiwei.xiangle.view.ListViewForScrollView
+                    android:id="@+id/comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_title"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:divider="#00000000"
+                    android:dividerHeight="18dp" />
+            </RelativeLayout>
+        </ScrollView>
+
+<!--        <com.scwang.smart.refresh.footer.ClassicsFooter-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <!--    底部评论框-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:background="@color/bg"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/comment"
+            android:background="@drawable/round_rect"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:hint="说点什么？"
+            android:gravity="center_vertical"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/like"
+            android:background="@drawable/like_btn_selector"
+            android:layout_marginLeft="10dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"/>
+        <Button
+            android:id="@+id/favorite"
+            android:background="@drawable/favorite_btn_selector"
+            android:layout_marginLeft="10dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"/>
+    </LinearLayout>
+</RelativeLayout>

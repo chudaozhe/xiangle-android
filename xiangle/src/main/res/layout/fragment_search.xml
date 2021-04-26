@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        <com.scwang.smart.refresh.header.ClassicsHeader-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/search"
+                android:background="@drawable/round_rect"
+                android:drawableLeft="@mipmap/search"
+                android:hint="请输入关键词"
+                android:imeOptions="actionSearch"
+                android:gravity="center_vertical|left"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="1"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/input_cursor"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"/>
+            <!-- android:overScrollMode="never" 去掉自带的回弹效果-->
+            <ListView
+                android:id="@+id/listView"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+<!--        <com.scwang.smart.refresh.footer.ClassicsFooter-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

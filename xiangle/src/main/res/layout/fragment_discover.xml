@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/flashImage"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="TODO" />
+    <TextView
+        android:id="@+id/topicTitle"
+        android:layout_below="@+id/flashImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:textSize="16sp"
+        android:text="推荐话题"
+        android:textColor="@color/orange" />
+    <!--        <net.cuiwei.xiangle.view.GridViewForScrollView-->
+    <!--                android:id="@+id/GridView"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:layout_marginBottom="20dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/topicTitle"-->
+    <!--                android:numColumns="auto_fit"-->
+    <!--                android:horizontalSpacing="10dp"-->
+    <!--                android:verticalSpacing="10dp"-->
+    <!--                android:columnWidth="100dp"-->
+    <!--                android:stretchMode="columnWidth"-->
+    <!--                android:gravity="center"/>-->
+    <!--        -->
+    <LinearLayout
+        android:layout_below="@+id/topicTitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false">
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_weight="3"/>
+    </LinearLayout>
+</RelativeLayout>

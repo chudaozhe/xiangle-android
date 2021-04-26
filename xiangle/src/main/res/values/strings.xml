@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">相乐搞笑</string>
+    <string name="followers">粉丝：%d</string>
+    <string name="following">关注：%d</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover_topic_sum">%1$d个内容</string>
+    <string name="person_info_province">选择省份</string>
+    <string name="person_info_city">选择城市</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/cardview_shadow_start_color">
+
+    <TextView
+            android:id="@+id/publish_text"
+            android:text="文字"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    <TextView
+            android:id="@+id/publish_picture"
+            android:text="图片"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"/>
+    <TextView
+            android:id="@+id/publish_video"
+            android:text="视频"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"/>
+    <TextView
+            android:id="@+id/publish_cancel"
+            android:text="取消"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"/>
+</LinearLayout>

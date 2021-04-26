@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <Button
+        android:id="@+id/close"
+        android:background="@mipmap/cuowu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <net.cuiwei.xiangle.view.GridViewForScrollView
+        android:id="@+id/gridView"
+        android:rowCount="1"
+        android:columnCount="4"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:columnWidth="60dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+</RelativeLayout>

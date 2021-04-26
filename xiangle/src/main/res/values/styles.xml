@@ -1,0 +1,91 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <style name="txt_tabbar" parent="@style/obj_tabbar">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_height">15.0dip</item>
+    </style>
+    <style name="obj_tabbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+<!--    详情页评论框start-->
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit_from_bottom</item>
+    </style>
+
+    <!-- 中间弹出框 -->
+    <style name="dialog_center" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景 -->
+        <!-- 窗口背景 @color/touming的值为：#00000000 ， style中不能直接引用16进制，感谢评论区的老铁提醒-->
+
+        <item name="android:windowBackground">@color/touming</item>
+
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <!--    详情页评论框end-->
+
+    <!--底部弹框动画-->
+    <style name="bottomDialog">
+        <item name="android:windowEnterAnimation">@anim/publish_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/publish_dialog_out</item>
+    </style>
+
+    <!--    自定义-->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/orange</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/orange</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/white</item>
+        <!--底部导航栏颜色-->
+        <item name="android:navigationBarColor">@color/black</item>
+        <!--CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色-->
+<!--        <item name="colorAccent">@color/green</item>-->
+        <!--按钮 水波纹效果 颜色-->
+<!--        <item name="colorControlHighlight">#ff333333</item>-->
+    </style>
+
+    <style name="BaseDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/orange</item>
+    </style>
+    <style name="EnterExitAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/exit_anim</item>
+    </style>
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#969696</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

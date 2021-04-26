@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId 'net.cuiwei.xiangle'
+        minSdkVersion 25
+        targetSdkVersion 30
+        versionCode 2
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    // Okhttp库
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    // Retrofit库
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+    //日志拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
+    //添加retrofit gson转换会自动下载gson
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //日志打印(样式更漂亮？
+    implementation('com.github.ihsanbal:LoggingInterceptor:3.1.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
+    implementation  'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    implementation  'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+    implementation  'com.scwang.smart:refresh-header-material:2.0.1'    //谷歌刷新头
+    implementation  'com.scwang.smart:refresh-footer-classics:2.0.1'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //StringUtils,数组转字符串
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    dependencies { implementation 'com.aliyun.dpa:oss-android-sdk:2.9.4' }
+
+}
